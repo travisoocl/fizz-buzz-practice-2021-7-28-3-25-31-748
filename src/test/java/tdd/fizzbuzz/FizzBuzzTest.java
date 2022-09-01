@@ -1,6 +1,5 @@
 package tdd.fizzbuzz;
 
-import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,4 +32,15 @@ public class FizzBuzzTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void should_print_whizz_when_assess_number_given_7() {
+
+        String expected = "Whizz";
+        String actual = FizzBuzz.assess(5);
+
+        assertEquals(expected, actual);
+    }
+
+
 }
