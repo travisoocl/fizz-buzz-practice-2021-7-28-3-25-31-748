@@ -51,5 +51,14 @@ public class FizzBuzzTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void should_print_FizzWhizz_when_assess_number_given_21() {
+
+        String expected = "FizzWhizz";
+        String actual = FizzBuzz.assess(21);
+
+        assertEquals(expected, actual);
+    }
+
 
 }

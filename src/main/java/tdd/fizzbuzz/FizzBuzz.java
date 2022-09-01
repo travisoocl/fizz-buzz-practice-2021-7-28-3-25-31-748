@@ -10,12 +10,10 @@ public class FizzBuzz {
             message.append("Buzz");
         }
 
-        if (number % 7 == 0)
-        {
+        if (number % 7 == 0) {
             message.append("Whizz");
         }
-        if(message.length() == 0)
-        {
+        if (message.length() == 0) {
             message.append(number);
         }
         return message.toString();
