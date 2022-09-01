@@ -2,17 +2,22 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
     public static String assess(int number) {
+        StringBuilder message = new StringBuilder();
         if (number % 3 == 0) {
-            return "Fizz";
+            message.append("Fizz");
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            message.append("Buzz");
         }
 
         if (number % 7 == 0)
         {
-            return  "Whizz";
+            message.append("Whizz");
         }
-            return String.valueOf(number);
+        if(message.length() == 0)
+        {
+            message.append(number);
+        }
+        return message.toString();
     }
 }
